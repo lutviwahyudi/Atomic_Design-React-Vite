@@ -1,3 +1,5 @@
+import '../../assets/css/auth.css';
+
 const AuthLayouts = (props) => {
   return (
     <div className="login-container">
