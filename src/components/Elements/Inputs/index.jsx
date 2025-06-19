@@ -5,9 +5,15 @@ import Label from "./label"
 const InputForm = (props) => {
     const { label, type, name, placeholder } = props;
    return (
-    <div className="form-group">
-            <Label htmlFor={name} label={label} id={name}/>
-            <Input name={name} type={type} placeholder={placeholder} id={name} />
+   <div className="flex flex-col">
+            <Label htmlFor={name}>{label}</Label>
+            <Input
+              id={name}
+              name={name}
+              type={type}
+              placeholder={placeholder}
+              required
+            />
           </div>
    )
 }

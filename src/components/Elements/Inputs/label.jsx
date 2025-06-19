@@ -1,10 +1,8 @@
 
-const FromLabel = (props) => {
-    const { label, htmlFor } = props;
+const FormLabel = (props) => {
+    const { label, name } = props;
     return (
-        <label htmlFor={htmlFor} className="form-label">
-            {label}
-        </label>
+        <label htmlFor={name} className="text-sm text-gray-700">{label}</label>
     );
 }
-export default FromLabel;
+export default FormLabel;
